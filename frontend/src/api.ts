@@ -9,7 +9,7 @@ import {
 
 // const API_BASE_URL = "http://localhost:4000/api";
 const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "http://localhost:4000/api";
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:4000";
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -19,14 +19,14 @@ const api = axios.create({
 });
 
 export const fetchExperiences = async (): Promise<Experience[]> => {
-  const response = await api.get("/experiences");
+  const response = await api.get("/api/experiences");
   return response.data;
 };
 
 export const fetchExperienceDetails = async (
   id: string
 ): Promise<ExperienceDetails> => {
-  const response = await api.get(`/experiences/${id}`);
+  const response = await api.get(`/api/experiences/${id}`);
   const data = response.data;
   return { ...data.experience, slotsByDate: data.slotsByDate };
 };
@@ -36,7 +36,7 @@ export const validatePromoCode = async (
   subtotal: number
 ): Promise<PromoResult> => {
   try {
-    const response = await api.post("/promo/validate", {
+    const response = await api.post("/api/promo/validate", {
       code: code.toUpperCase(),
       subtotal,
     });
@@ -80,10 +80,6 @@ export const createBooking = async (
     return { success: false, error: "Slot information is missing from cart." };
   }
 
-  // The backend expects the MongoDB _id as a string for experienceId
-  // But slots have the experienceId stored, and we need to get the experience's MongoDB _id
-  // The slot already has the correct experienceId reference
-
   const slotId = cart.selectedSlot._id;
 
   console.log("Extracted slotId:", slotId);
@@ -117,7 +113,7 @@ export const createBooking = async (
   );
 
   try {
-    const response = await api.post("/bookings", bookingPayload);
+    const response = await api.post("/api/bookings", bookingPayload);
     console.log("✅ Booking success:", response.data);
     return { success: true, refId: response.data.refId };
   } catch (error) {
