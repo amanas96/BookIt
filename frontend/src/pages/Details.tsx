@@ -404,7 +404,7 @@ const Details: React.FC = () => {
               </div>
             )}
 
-            {/* Quantity Control inside summary */}
+            {/* Quantity  */}
             <div className="flex justify-between items-center text-sm  mb-3">
               <span>Quantity:</span>
               <div className="flex items-center  rounded-lg overflow-hidden w-fit">
@@ -423,7 +423,7 @@ const Details: React.FC = () => {
                     updateQuantity(parseInt(e.target.value) || 1)
                   }
                   min="1"
-                  className="w-10 text-center ml-2 text-gray-900 font-semibold text-lg focus:outline-none border-0 p-0 m-0"
+                  className="w-10 text-center ml-2 text-gray-900 font-semibold  bg-[#EFEFEF] text-lg focus:outline-none border-0 p-0 m-0"
                   readOnly
                 />
 
