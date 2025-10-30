@@ -10,7 +10,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   const { id, name, location, tagline, basePrice, image } = experience;
 
   return (
-    <div className="bg-white  rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-2xl hover:-translate-y-1">
+    <div className="bg-white  rounded-xl shadow-lg overflow-hidden  transform transition duration-300 hover:shadow-2xl hover:-translate-y-1">
       <img
         className="h-50 w-full object-cover"
         src={image}

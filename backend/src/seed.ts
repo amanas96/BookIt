@@ -15,7 +15,8 @@ const mockExperiences = [
     description:
       "Safety first with gear included. Helmet and Life jackets along with an expert will accompany in kayaking. Scenic routes, trained guides, and safety briefing.",
     // image:"https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600",
-    image: "http://localhost:4000/images/kayaking.jpg",
+    image: "https://bookit-1-6577.onrender.com/images/kayaking.jpg",
+
     minAge: 10,
     duration: "2 hours",
   },
@@ -29,7 +30,7 @@ const mockExperiences = [
       "Early morning trek to Nandi Hills. Includes light breakfast and photography tips.",
     // image:
     //   "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600",
-    image: "http://localhost:4000/images/sunrise.jpg",
+    image: "https://bookit-1-6577.onrender.com/images/sunrise.jpg",
 
     minAge: 12,
     duration: "4 hours",
@@ -44,7 +45,7 @@ const mockExperiences = [
       "Guided tour through lush coffee estates, including a tasting session.",
     // image:
     //   "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&h=600",
-    image: "http://localhost:4000/images/coffie.jpg",
+    image: "https://bookit-1-6577.onrender.com/images/coffie.jpg",
 
     minAge: 8,
     duration: "3 hours",
@@ -59,7 +60,7 @@ const mockExperiences = [
       "Experience the serene waters and wildlife of Sunderban. Safety first with gear included.",
     // image:
     //   "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600",
-    image: "http://localhost:4000/images/boat-cruise.jpg",
+    image: "https://bookit-1-6577.onrender.com/images/boat-cruise.jpg",
 
     minAge: 8,
     duration: "3 hours",
@@ -74,7 +75,7 @@ const mockExperiences = [
       "Adrenaline-pumping bungee jump experience. Safety first with gear included.",
     // image:
     //   "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=800&h=600",
-    image: "http://localhost:4000/images/bunjee.jpg",
+    image: "https://bookit-1-6577.onrender.com/images/bunjee.jpg",
 
     minAge: 18,
     duration: "1 hour",
@@ -89,7 +90,7 @@ const mockExperiences = [
       "Professional instructors will guide you through coral reefs and marine life. Includes underwater photos and safety gear.",
     // image:
     //   "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600",
-    image: "http://localhost:4000/images/scuba.jpg",
+    image: "https://bookit-1-6577.onrender.com/images/scuba.jpg",
 
     minAge: 14,
     duration: "2 hours",
@@ -104,8 +105,7 @@ const mockExperiences = [
       "Evening desert safari with camel ride, folk dance, and dinner under the stars. Experience Rajasthan's culture at its finest.",
     // image:
     //   "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&h=600",
-    image: "http://localhost:4000/images/desert-safari.jpg",
-
+    image: "https://bookit-1-6577.onrender.com/images/desert-safari.jpg",
     minAge: 10,
     duration: "5 hours",
   },
@@ -119,7 +119,7 @@ const mockExperiences = [
       "Soar through the skies at India’s paragliding capital. Includes training, flight video, and safety briefing.",
     // image:
     //   "https://images.unsplash.com/photo-1516569422866-f3c9ccf7c2cc?w=800&h=600",
-    image: "http://localhost:4000/images/paragliding.jpg",
+    image: "https://bookit-1-6577.onrender.com/images/paragliding.jpg",
 
     minAge: 16,
     duration: "1.5 hours",
