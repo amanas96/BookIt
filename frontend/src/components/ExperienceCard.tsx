@@ -12,7 +12,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   return (
     <div className="bg-white  rounded-xl shadow-lg overflow-hidden  transform transition duration-300 hover:shadow-2xl hover:-translate-y-1">
       <img
-        className="h-48 w-full object-cover"
+        className="aspect-[4/3] w-full object-cover"
         src={image}
         alt={name}
         onError={(e) => {
