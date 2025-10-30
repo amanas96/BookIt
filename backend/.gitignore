@@ -1,0 +1,30 @@
+Node.js
+
+dependencies
+
+/node_modules
+/npm-debug.log
+/yarn-error.log
+/package-lock.json
+/yarn.lock
+
+TypeScript build output
+
+/dist
+/build
+/*.tsbuildinfo
+
+IDE files
+
+.vscode
+.idea
+
+Environment variables (CRUCIAL for security)
+
+.env
+.env.*
+
+Logs and temporary data
+
+logs
+*.log
