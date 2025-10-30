@@ -14,6 +14,7 @@ connectDB();
 const allowedOrigins = [
   "http://localhost:5173",
   "https://book-it-theta.vercel.app",
+  "https://book-it-git-main-amanas96s-projects.vercel.app",
 ];
 
 app.use(
