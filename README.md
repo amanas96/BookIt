@@ -1,7 +1,3 @@
-Perfect 👍 Let’s make a **professional README.md** for your **BookIt** MERN project — suitable for GitHub or your portfolio.
-
-Here’s a complete version 👇
-
 ---
 
 ## 🏕️ **BookIt – Adventure Experience Booking Platform**
