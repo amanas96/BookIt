@@ -5,16 +5,26 @@ import { connectDB } from "./db";
 import experienceRoutes from "./routes/experience";
 import bookingRoutes from "./routes/booking";
 import promoRoutes from "./routes/promo";
-import { fileURLToPath } from "url";
 
 const app: Application = express();
 
 // Database Connection
 connectDB();
 // Middleware
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://book-it-theta.vercel.app",
+];
+
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "*",
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
@@ -31,18 +41,6 @@ app.use("/images", express.static("public/images"));
 app.get("/", (req: Request, res: Response) => {
   res.send("BookIt API is running!");
 });
-
-// // 🟢 Serve React build in production
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
-
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(path.join(__dirname, "../frontend/dist")));
-
-//   app.get("*", (_, res) =>
-//     res.sendFile(path.resolve(__dirname, "../frontend/dist", "index.html"))
-//   );
-// }
 
 // Start Server
 app.listen(config.port, () => {
